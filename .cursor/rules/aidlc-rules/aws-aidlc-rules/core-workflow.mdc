@@ -419,6 +419,9 @@ The Operations stage will eventually include:
   - **CRITICAL**: Log every interaction, not just approvals
 - **Quality Focus**: Complex changes get full treatment, simple changes stay efficient
 - **Content Validation**: Always validate content before file creation per content-validation.md rules
+- **Mermaid Diagrams Only**: ALL diagrams MUST use Mermaid syntax (see content-validation.md for details)
+  - Architecture diagrams, workflow visualizations, sequence diagrams, class diagrams
+  - NO ASCII art, NO external image files, NO third-party diagram tools
 - **NO EMERGENT BEHAVIOR**: Construction phases MUST use standardized 2-option completion messages as defined in their respective rule files. DO NOT create 3-option menus or other emergent navigation patterns.
 
 ## MANDATORY: Plan-Level Checkbox Enforcement

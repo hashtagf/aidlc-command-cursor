@@ -586,3 +586,69 @@
 **Context**: Minor update to improve AI performance
 
 ---
+
+## ========== NEW REQUEST ==========
+**Timestamp**: 2025-12-15T17:00:00Z
+**Branch**: main
+**User Input**: "ต้องการเพิ่ม เวลาวาด diagram ต่างๆ อยยให้ใช้ Mermaid ในการวาด"
+**Context**: User requests to add a rule that all diagrams should be drawn using Mermaid
+
+---
+
+## INCEPTION - Workspace Detection (Resume)
+**Timestamp**: 2025-12-15T17:00:01Z
+**Branch**: main
+**AI Action**: Checked existing aidlc-state.md
+**Findings**:
+- Project State: COMPLETE
+- Project Type: Greenfield
+- All previous stages completed
+**Decision**: Resume workflow for new enhancement request
+**Context**: Workspace Detection Step 1 - Check for existing AI-DLC Project
+
+---
+
+## INCEPTION - Requirements Analysis (Minimal Depth)
+**Timestamp**: 2025-12-15T17:00:02Z
+**Branch**: main
+**AI Action**: Intent Analysis for new request
+**Intent Analysis**:
+- Request Type: Enhancement (Rule Update)
+- Request Clarity: Clear
+- Scope Estimate: Update rule file(s) to mandate Mermaid for diagrams
+- Complexity Estimate: Simple
+**Depth Selected**: Minimal (clear and simple request)
+**Context**: Requirements Analysis Step 2-3 - Analyze Request and Determine Depth
+
+---
+
+## CONSTRUCTION - Code Generation (Direct)
+**Timestamp**: 2025-12-15T17:01:00Z
+**Branch**: main
+**AI Action**: Implemented Mermaid diagram mandatory rule
+**Changes Made**:
+1. Updated `content-validation.md`:
+   - Added "🎨 MANDATORY: Mermaid for All Diagrams" section
+   - Listed all supported Mermaid diagram types (Flowchart, Sequence, Class, State, ER, Gantt, Pie, Git Graph, Mindmap, Timeline)
+   - Added usage guidelines with clear DO and DON'T rules
+   - Included template examples for common diagram types
+2. Updated `core-workflow.mdc`:
+   - Added "Mermaid Diagrams Only" to Key Principles section
+   - Referenced content-validation.md for detailed rules
+**Files Updated**:
+- `.cursor/rules/aidlc-rules/aws-aidlc-rule-details/common/content-validation.md`
+- `.cursor/rules/aidlc-rules/aws-aidlc-rules/core-workflow.mdc`
+**Context**: Code Generation - Implemented enhancement
+
+---
+
+## ========== REQUEST COMPLETE ==========
+**Timestamp**: 2025-12-15T17:01:30Z
+**Branch**: main
+**Request**: Mandate Mermaid for all diagrams
+**Status**: ✅ Complete
+**Changes**: 
+- content-validation.md: Added comprehensive Mermaid requirements section
+- core-workflow.mdc: Added Mermaid principle to Key Principles
+
+---

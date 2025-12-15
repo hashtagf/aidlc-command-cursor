@@ -6,7 +6,7 @@
 # But YOUR projects SHOULD commit aidlc-docs/ for team collaboration
 
 # Generated AIDLC artifacts (for this template only)
-aidlc-docs/
+# aidlc-docs/
 
 # macOS
 .DS_Store

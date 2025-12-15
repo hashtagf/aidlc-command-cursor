@@ -68,3 +68,15 @@
   - Work Requests: MUST follow AIDLC workflow
   - Status Checks: Check state file and respond
 
+### Enhancement 3: Mermaid Diagram Mandate
+- **Date**: 2025-12-15T17:00:00Z
+- **Request**: "เวลาวาด diagram ต่างๆ ให้ใช้ Mermaid ในการวาด"
+- **Scope**: Simple (Rule update)
+- **Workflow Used**: Minimal Depth (Requirements → Code Generation)
+- **Status**: ✅ Complete
+- **Changes**:
+  - Updated content-validation.md with comprehensive Mermaid requirements
+  - Added supported diagram types table (Flowchart, Sequence, Class, State, ER, Gantt, etc.)
+  - Added usage guidelines (DO and DON'T rules)
+  - Added template examples for common diagram types
+  - Added "Mermaid Diagrams Only" to Key Principles in core-workflow.mdc
