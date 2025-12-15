@@ -40,10 +40,26 @@ When you use this command, the AI will:
 - `/aidlc-status` - View current status
 - `/aidlc-requirements` - Start requirements analysis
 
-## Audit Logging
+## Audit Logging (Branch-Based)
 
-All interactions are logged to `aidlc-docs/audit.md` with:
+AIDLC uses a **branch-based audit system** for team collaboration:
+
+```
+aidlc-docs/audit/
+├── audit-index.md          # Master index
+├── main.md                 # Main branch audit
+├── feature-{name}.md       # Feature branch audits
+└── archived/               # Merged branch audits
+```
+
+### How It Works
+- Detects current Git branch automatically
+- Creates separate audit file per branch
+- Archives when branch is merged
+
+### Logged Information
 - Timestamps (ISO 8601 format)
+- Current Git branch
 - Complete user inputs (never summarized)
 - AI actions and decisions
 - Stage transitions

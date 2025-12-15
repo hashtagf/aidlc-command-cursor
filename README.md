@@ -94,10 +94,14 @@ cp -r .cursor/commands/* ~/.cursor/commands/
 │   └── rules/
 │       └── aidlc-rules/       # AIDLC Reference Rules
 ├── aidlc-docs/                # Generated AIDLC artifacts
+│   ├── audit/                 # 📝 Branch-based audit logs
+│   │   ├── audit-index.md     # Master index
+│   │   ├── main.md            # Main branch audit
+│   │   ├── feature-*.md       # Feature branch audits
+│   │   └── archived/          # Merged branches
 │   ├── inception/
 │   ├── construction/
-│   ├── aidlc-state.md
-│   └── audit.md
+│   └── aidlc-state.md
 └── README.md
 ```
 

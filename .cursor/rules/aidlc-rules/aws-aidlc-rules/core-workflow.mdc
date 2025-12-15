@@ -379,13 +379,33 @@ The Operations stage will eventually include:
 - **Stage-Level**: Track overall workflow progress in aidlc-state.md
 - **Update immediately**: All progress updates in SAME interaction where work is completed
 
-## Prompts Logging Requirements
-- **MANDATORY**: Log EVERY user input (prompts, questions, responses) with timestamp in audit.md
+## Prompts Logging Requirements - Branch-Based Audit System
+
+**IMPORTANT**: Load audit management rules from `common/audit-management.md` for full details.
+
+### Branch-Based Audit Location
+- **MANDATORY**: Determine current Git branch: `git branch --show-current`
+- **MANDATORY**: Sanitize branch name (replace `/` with `-`, lowercase)
+- **MANDATORY**: Use branch-specific audit file: `aidlc-docs/audit/{sanitized-branch}.md`
+- **FALLBACK**: If no git or detached HEAD, use `main.md`
+
+### Audit Directory Structure
+```text
+aidlc-docs/audit/
+├── audit-index.md              # Master index of all branches
+├── main.md                     # Main branch audit
+├── feature-{name}.md           # Feature branch audits
+├── bugfix-{name}.md            # Bugfix branch audits
+└── archived/                   # Merged branch audits
+```
+
+### Core Logging Requirements
+- **MANDATORY**: Log EVERY user input (prompts, questions, responses) with timestamp
 - **MANDATORY**: Capture user's COMPLETE RAW INPUT exactly as provided (never summarize)
 - **MANDATORY**: Log every approval prompt with timestamp before asking the user
 - **MANDATORY**: Record every user response with timestamp after receiving it
-- **CRITICAL**: ALWAYS append changes to EDIT audit.md file, NEVER use tools and commands that completely overwrite its contents
-- **CRITICAL**: Using file writing tools and commands that overwrite contents of the entire audit.md and cause duplication
+- **MANDATORY**: Include branch name in each audit entry
+- **CRITICAL**: ALWAYS append changes, NEVER overwrite audit files
 - Use ISO 8601 format for timestamps (YYYY-MM-DDTHH:MM:SSZ)
 - Include stage context for each entry
 
@@ -393,6 +413,7 @@ The Operations stage will eventually include:
 ```markdown
 ## [Stage Name or Interaction Type]
 **Timestamp**: [ISO timestamp]
+**Branch**: [current-git-branch]
 **User Input**: "[Complete raw user input - never summarized]"
 **AI Response**: "[AI's response or action taken]"
 **Context**: [Stage, action, or decision made]
@@ -400,22 +421,35 @@ The Operations stage will eventually include:
 ---
 ```
 
-### Correct Tool Usage for audit.md
+### On Session Start
+1. Detect current Git branch
+2. Check if `aidlc-docs/audit/{branch}.md` exists
+3. If not exists, create with branch metadata header
+4. Update `aidlc-docs/audit/audit-index.md` with branch entry
+
+### Correct Tool Usage for Audit Files
 
 ✅ CORRECT:
 
-1. Read the audit.md file
+1. Read the branch audit file (e.g., `audit/feature-user-auth.md`)
 2. Append/Edit the file to make changes
 
 ❌ WRONG:
 
-1. Read the audit.md file
-2. Completely overwrite the audit.md with the contents of what you read, plus the new changes you want to add to it
+1. Read the audit file
+2. Completely overwrite with contents plus new changes
 
 ## Directory Structure
 
 ```text
 aidlc-docs/
+├── audit/                      # 📝 Branch-based audit system
+│   ├── audit-index.md          # Master index of all branches
+│   ├── main.md                 # Main branch audit trail
+│   ├── feature-{name}.md       # Feature branch audits
+│   ├── bugfix-{name}.md        # Bugfix branch audits
+│   └── archived/               # Merged/completed branch audits
+│       └── {branch-name}.md
 ├── inception/                  # 🔵 INCEPTION PHASE artifacts
 │   ├── plans/
 │   │   ├── workspace-detection.md
@@ -476,6 +510,5 @@ aidlc-docs/
 │       └── build-and-test-summary.md
 ├── operations/                 # 🟡 OPERATIONS PHASE artifacts (placeholder)
 │   └── [Future: deployment and monitoring artifacts]
-├── aidlc-state.md             # Dynamic state tracking
-└── audit.md                    # Complete audit trail
+└── aidlc-state.md             # Dynamic state tracking
 ```
