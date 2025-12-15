@@ -16,6 +16,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.1.0] - 2025-12-15
+
+### Added
+- **Fix/Resume Flow**: Handle post-completion errors without restarting full AIDLC workflow
+  - Auto-detect completed workflows with error reports
+  - Skip inception/design stages for simple fixes
+  - Direct to Code Generation for targeted fixes
+  - Track fix cycles in state file
+  - Keywords: fix, error, bug, failed, broken, crash
+
+---
+
 ## [2.0.0] - 2025-12-15
 
 ### Changed

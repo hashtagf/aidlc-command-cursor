@@ -40,6 +40,62 @@ alwaysApply: true
 - "What stage are we on?" → Read branch state file and report
 - "What's next?" → Read branch state file and report
 
+### 🔧 Fix/Resume (Post-Completion Errors)
+- "Fix error: [message]" → **Fix/Resume Flow** (skip inception stages)
+- "พบ error: [message]" → **Fix/Resume Flow**
+- "Build failed" → **Fix/Resume Flow**
+- "Test failed" → **Fix/Resume Flow**
+
+---
+
+## 🔄 FIX/RESUME FLOW (Post-Completion Errors)
+
+**Use this flow when:**
+1. AIDLC workflow is COMPLETE on current branch
+2. User reports an error (build failure, test failure, runtime error)
+3. Fix is within the same feature scope
+
+**Detection Criteria:**
+- Branch state file shows `Current Stage: ✅ COMPLETE`
+- User message contains error-related keywords (fix, error, bug, failed, broken, crash)
+- Context is within existing feature (not new functionality)
+
+**Flow Execution:**
+
+1. **Log in Audit**: Record the error report with full details
+2. **Quick Analysis**: Identify affected code (no new artifacts needed)
+3. **Direct to Code Generation**: Skip all inception/design stages
+4. **Fix Code**: Apply targeted fix
+5. **Update Tests**: Add/modify tests if needed
+6. **Update CHANGELOG**: Add fix entry
+7. **Update State**: Increment fix cycle counter
+
+**State Tracking for Fixes:**
+```markdown
+## Fix Cycles
+- Fix #1: [timestamp] - [brief description]
+- Fix #2: [timestamp] - [brief description]
+```
+
+**Artifacts (Minimal):**
+- No new inception documents
+- No new design documents
+- Only: audit log entry + CHANGELOG update + code changes
+
+**Example Flow:**
+```
+User: "Fix null pointer in UserService.getUser()"
+
+AI:
+1. ✅ Log in audit/main.md
+2. ✅ Analyze: NullPointerException in UserService line 45
+3. ✅ Skip inception stages (workflow complete)
+4. ✅ Apply fix: Add null check
+5. ✅ Update test: Add testGetUserNotFound()
+6. ✅ Update CHANGELOG
+7. ✅ Update state: Fix #1 logged
+```
+
 ---
 
 ## 🔒 MANDATORY WORKFLOW ENFORCEMENT

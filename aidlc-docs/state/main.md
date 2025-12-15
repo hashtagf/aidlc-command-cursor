@@ -128,3 +128,16 @@
   - All `aidlc-docs/inception/` → `branches/{branch}/inception/`
   - All `aidlc-docs/construction/` → `branches/{branch}/construction/`
   - Common files fixed: error-handling.md, workflow-changes.md, session-continuity.md, terminology.md
+
+### Enhancement 7: Fix/Resume Flow
+- **Date**: 2025-12-15T18:00:00Z
+- **Request**: "ปรับให้ทำตามคำแนะนำเลย" (Add Fix/Resume Flow for post-completion errors)
+- **Scope**: Simple (Rule update)
+- **Workflow Used**: Minimal Depth (Requirements → Code Generation)
+- **Status**: ✅ Complete
+- **Changes**:
+  - Added "🔄 FIX/RESUME FLOW" section to core-workflow.mdc
+  - Added detection criteria for completed workflows with errors
+  - Skip all inception/design stages for simple fixes
+  - Direct to Code Generation for targeted fixes
+  - Track fix cycles in state file
