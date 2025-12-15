@@ -21,6 +21,10 @@ Generate code for a unit of work.
    - Utility functions
    - Unit tests
 
+4. **Update CHANGELOG**
+   - Add entries under `[Unreleased]`
+   - Link to related user stories
+
 ## Usage
 
 For current unit:

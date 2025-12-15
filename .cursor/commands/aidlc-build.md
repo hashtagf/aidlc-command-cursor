@@ -19,6 +19,11 @@ Generate build and test instructions.
    - Quick commands
    - Verification checklist
 
+4. **Finalize CHANGELOG**
+   - Ask for version number
+   - Convert `[Unreleased]` to versioned entry
+   - Add release date
+
 ## Output Files
 
 ```

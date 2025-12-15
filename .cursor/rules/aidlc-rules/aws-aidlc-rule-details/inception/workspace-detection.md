@@ -56,6 +56,45 @@ Create `aidlc-docs/aidlc-state.md`:
 [Will be populated as workflow progresses]
 ```
 
+## Step 4.1: Create or Verify CHANGELOG.md
+
+**Check if `CHANGELOG.md` exists at project root:**
+
+- **If NOT exists**: Create from template (see `common/changelog-management.md`)
+- **If exists**: Leave unchanged
+
+**CHANGELOG Template:**
+
+```markdown
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+---
+
+## [Unreleased]
+
+### Added
+<!-- New features will be added here by AIDLC -->
+
+### Changed
+<!-- Changes to existing functionality -->
+
+### Fixed
+<!-- Bug fixes -->
+
+### Removed
+<!-- Removed features -->
+
+---
+```
+
+**Log in audit.md:**
+- Record "CHANGELOG.md created" or "CHANGELOG.md already exists"
+
 ## Step 5: Present Completion Message
 
 **For Brownfield Projects:**

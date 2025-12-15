@@ -296,15 +296,80 @@ Create `aidlc-docs/construction/build-and-test/build-and-test-summary.md`:
 
 ---
 
-## Step 8: Update State Tracking
+## Step 8: Finalize CHANGELOG Version
+
+After all tests pass, finalize the CHANGELOG:
+
+### 8.1: Summarize Changes
+- [ ] Read current `CHANGELOG.md` from project root
+- [ ] Review all entries under `[Unreleased]` section
+- [ ] Prepare summary for user
+
+### 8.2: Ask User for Version
+Present to user:
+
+```markdown
+📋 **CHANGELOG Version Finalization**
+
+**Changes in this release:**
+[Summary of all [Unreleased] entries]
+
+**Suggested Version**: [X.Y.Z]
+- Major (X.0.0): If breaking changes
+- Minor (1.X.0): If new features (default for new units)
+- Patch (1.0.X): If only bug fixes
+
+**Options:**
+1. Use suggested version ([X.Y.Z])
+2. Specify different version
+3. Keep as [Unreleased] (finalize later)
+```
+
+### 8.3: Update CHANGELOG
+
+Based on user's choice:
+- [ ] Convert `[Unreleased]` section to versioned entry
+- [ ] Add release date in ISO format (YYYY-MM-DD)
+- [ ] Create new empty `[Unreleased]` section
+- [ ] Save updated CHANGELOG.md
+
+**Example Conversion:**
+
+Before:
+```markdown
+## [Unreleased]
+
+### Added
+- **User Auth Module**: JWT authentication
+```
+
+After (if user chooses version 1.0.0):
+```markdown
+## [Unreleased]
+
+### Added
+<!-- New features for next release -->
+
+---
+
+## [1.0.0] - 2025-12-15
+
+### Added
+- **User Auth Module**: JWT authentication
+```
+
+---
+
+## Step 9: Update State Tracking
 
 Update `aidlc-docs/aidlc-state.md`:
 - Mark Build and Test stage as complete
 - Update current status
+- Record CHANGELOG version if finalized
 
 ---
 
-## Step 9: Present Results to User
+## Step 10: Present Results to User
 
 Present comprehensive message:
 
@@ -334,7 +399,7 @@ Review the summary in aidlc-docs/construction/build-and-test/build-and-test-summ
 
 ---
 
-## Step 10: Log Interaction
+## Step 11: Log Interaction
 
 **MANDATORY**: Log the phase completion in `aidlc-docs/audit.md`:
 

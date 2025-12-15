@@ -32,6 +32,7 @@ Initialize AIDLC project structure in the current workspace.
 4. **Create Initial Files**
    - `aidlc-state.md` - State tracking
    - `audit.md` - Audit trail
+   - `CHANGELOG.md` - Project changelog (at project root)
 
 ## Usage
 
