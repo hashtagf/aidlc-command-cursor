@@ -6,7 +6,7 @@
 **ใช้หลักการ AI Development Life Cycle (AIDLC)**
 
 [![Cursor](https://img.shields.io/badge/Cursor-IDE-blue)](https://cursor.com)
-[![Commands](https://img.shields.io/badge/Commands-14-green)](.cursor/commands/)
+[![Commands](https://img.shields.io/badge/Commands-15-green)](.cursor/commands/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 </div>
@@ -82,7 +82,7 @@ AI จะเริ่ม workflow ให้อัตโนมัติ
 
 ---
 
-## 📋 Available Commands (14 Commands)
+## 📋 Available Commands (15 Commands)
 
 ### Main Commands
 
@@ -121,7 +121,7 @@ AI จะเริ่ม workflow ให้อัตโนมัติ
 ```
 aidlc-command-cursor/
 ├── .cursor/
-│   ├── commands/              # 📌 14 AIDLC Commands
+│   ├── commands/              # 📌 15 AIDLC Commands
 │   │   ├── aidlc.md           # Main entry
 │   │   ├── aidlc-init.md
 │   │   ├── aidlc-status.md
@@ -131,6 +131,7 @@ aidlc-command-cursor/
 │   │   ├── aidlc-plan.md
 │   │   ├── aidlc-design.md
 │   │   ├── aidlc-units.md
+│   │   ├── aidlc-multi-repo.md
 │   │   ├── aidlc-functional.md
 │   │   ├── aidlc-nfr.md
 │   │   ├── aidlc-infra.md

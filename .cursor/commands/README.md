@@ -210,5 +210,9 @@ rm -rf aidlc-docs/
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.4 | 2025-12-15 | Added multi-repository support |
+| 1.3 | 2025-12-15 | Branch-based audit system |
+| 1.2 | 2025-12-15 | CHANGELOG management |
+| 1.1 | 2025-12-15 | Helper scripts, distribution guide |
 | 1.0 | 2025-12-15 | Initial release |
 
