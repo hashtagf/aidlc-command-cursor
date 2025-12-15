@@ -16,6 +16,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.3.0] - 2025-12-15
+
+### Changed
+- **Branch-Based Audit Consistency**: Updated all rules and commands to use branch-based audit system
+  - Updated 7 INCEPTION rules (workspace-detection, reverse-engineering, requirements-analysis, user-stories, workflow-planning, application-design, units-generation)
+  - Updated 6 CONSTRUCTION rules (functional-design, nfr-requirements, nfr-design, infrastructure-design, code-generation, build-and-test)
+  - Updated 6 COMMON rules (changelog-management, workflow-changes, terminology, session-continuity, error-handling, depth-levels)
+  - Updated 3 Commands (aidlc-init, aidlc, README)
+  - Updated core-workflow.mdc for consistency
+  - All references now point to `aidlc-docs/audit/{branch}.md` instead of `audit.md`
+
+---
+
 ## [1.2.0] - 2025-12-15
 
 ### Added

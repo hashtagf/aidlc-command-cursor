@@ -92,7 +92,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ---
 ```
 
-**Log in audit.md:**
+**Log in branch audit file** (`aidlc-docs/audit/{branch}.md`):
 - Record "CHANGELOG.md created" or "CHANGELOG.md already exists"
 
 ## Step 5: Present Completion Message

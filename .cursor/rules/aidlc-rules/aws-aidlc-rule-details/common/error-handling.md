@@ -7,7 +7,7 @@
 2. **Assess impact**: Determine if the error is blocking or can be worked around
 3. **Communicate**: Inform the user about the error and options
 4. **Offer solutions**: Provide clear steps to resolve or work around the error
-5. **Document**: Log the error and resolution in `audit.md`
+5. **Document**: Log the error and resolution in branch audit file (`aidlc-docs/audit/{branch}.md`)
 
 ### Error Severity Levels
 
@@ -204,7 +204,7 @@
 2. Determine if they can be regenerated
 3. If yes: Return to that phase, regenerate artifacts
 4. If no: Ask user to provide information manually
-5. Document the gap in `audit.md`
+5. Document the gap in branch audit file (`aidlc-docs/audit/{branch}.md`)
 
 ### User Wants to Restart Phase
 
@@ -223,7 +223,7 @@
 
 **Recovery Steps**:
 1. Confirm user understands implications
-2. Document skip reason in `audit.md`
+2. Document skip reason in branch audit file (`aidlc-docs/audit/{branch}.md`)
 3. Mark phase as "SKIPPED" in `aidlc-state.md`
 4. Proceed to next phase
 5. Note: May cause issues in later phases if dependencies missing
@@ -324,7 +324,7 @@
 3. **Fail fast**: Stop immediately if critical artifacts are missing
 4. **Communicate clearly**: Tell user exactly what's missing and why it's needed
 5. **Offer options**: Regenerate, provide manually, or start fresh
-6. **Document recovery**: Log all recovery actions in audit.md State file is severely corrupted
+6. **Document recovery**: Log all recovery actions in branch audit file. State file is severely corrupted
 - User requirements have changed significantly
 - Architectural decision needs to be reversed
 
@@ -370,4 +370,4 @@
 2. **Checkpoint Often**: Update checkboxes immediately after completing steps
 3. **Communicate Clearly**: Explain what you're doing and why
 4. **Ask Questions**: Don't assume - clarify ambiguities immediately
-5. **Document Everything**: Log all decisions and changes in `audit.md`
+5. **Document Everything**: Log all decisions and changes in branch audit file (`aidlc-docs/audit/{branch}.md`)

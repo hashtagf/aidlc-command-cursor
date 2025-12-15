@@ -107,6 +107,6 @@ Design detailed business logic for the unit, technology-agnostic and focused pur
 - If user requests changes, update the design and repeat the approval process
 
 ### Step 9: Record Approval and Update Progress
-- Log approval in audit.md with timestamp
+- Log approval in branch audit file (`aidlc-docs/audit/{branch}.md`) with timestamp
 - Record the user's approval response with timestamp
 - Mark Functional Design stage complete in aidlc-state.md

@@ -192,7 +192,7 @@ Would you like to:
 - If NOT exists → Create from template
 - If exists → Leave unchanged
 
-**Log in audit.md**:
+**Log in branch audit file** (`aidlc-docs/audit/{branch}.md`):
 - "CHANGELOG.md created" or "CHANGELOG.md already exists"
 ```
 

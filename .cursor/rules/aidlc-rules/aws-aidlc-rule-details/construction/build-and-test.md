@@ -401,7 +401,7 @@ Review the summary in aidlc-docs/construction/build-and-test/build-and-test-summ
 
 ## Step 11: Log Interaction
 
-**MANDATORY**: Log the phase completion in `aidlc-docs/audit.md`:
+**MANDATORY**: Log the phase completion in branch audit file (`aidlc-docs/audit/{branch}.md`):
 
 ```markdown
 ## Build and Test Stage

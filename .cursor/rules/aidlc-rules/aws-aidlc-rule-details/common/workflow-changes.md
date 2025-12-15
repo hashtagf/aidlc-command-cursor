@@ -20,7 +20,7 @@ Users may request changes to the execution plan or phase execution during the wo
 3. **Update Execution Plan**: Add phase to `execution-plan.md` with rationale
 4. **Update State**: Mark phase as "PENDING" in `aidlc-state.md`
 5. **Execute Phase**: Follow normal phase execution process
-6. **Log Change**: Document in `audit.md` with timestamp and reason
+6. **Log Change**: Document in branch audit file (`aidlc-docs/audit/{branch}.md`) with timestamp and reason
 
 **Considerations**:
 - May need to update later phases that could benefit from new artifacts
@@ -42,7 +42,7 @@ Users may request changes to the execution plan or phase execution during the wo
 4. **Update Execution Plan**: Mark phase as "SKIPPED" with reason
 5. **Update State**: Mark phase as "SKIPPED" in `aidlc-state.md`
 6. **Adjust Later Phases**: Note that later phases may need manual setup
-7. **Log Change**: Document in `audit.md` with timestamp and reason
+7. **Log Change**: Document in branch audit file (`aidlc-docs/audit/{branch}.md`) with timestamp and reason
 
 **Considerations**:
 - Later phases may fail or require manual intervention
@@ -133,7 +133,7 @@ Users may request changes to the execution plan or phase execution during the wo
 1. **Complete Current Step**: Finish the current step in progress if possible
 2. **Update Checkboxes**: Mark all completed steps with [x]
 3. **Update State**: Ensure `aidlc-state.md` reflects current status
-4. **Log Pause**: Document pause point in `audit.md`
+4. **Log Pause**: Document pause point in branch audit file (`aidlc-docs/audit/{branch}.md`)
 5. **Provide Resume Instructions**: "When you return, I'll detect your existing project and offer to continue from: [current phase, current step]"
 
 **On Resume**:
@@ -141,7 +141,7 @@ Users may request changes to the execution plan or phase execution during the wo
 2. **Load Context**: Read all artifacts from completed stages
 3. **Show Status**: Display current stage and next step
 4. **Offer Options**: Continue where left off or review previous work
-5. **Log Resume**: Document resume point in `audit.md`
+5. **Log Resume**: Document resume point in branch audit file (`aidlc-docs/audit/{branch}.md`)
 
 ---
 
@@ -209,7 +209,7 @@ Users may request changes to the execution plan or phase execution during the wo
 ### During Changes
 
 1. **Archive Existing Work**: Always backup before making destructive changes
-2. **Update All Tracking**: Keep `aidlc-state.md`, plan files, and `audit.md` in sync
+2. **Update All Tracking**: Keep `aidlc-state.md`, plan files, and branch audit file in sync
 3. **Communicate Progress**: Keep user informed about what's happening
 4. **Validate Changes**: Ensure changes are consistent across all artifacts
 5. **Test Continuity**: Verify workflow can continue smoothly after changes
@@ -218,7 +218,7 @@ Users may request changes to the execution plan or phase execution during the wo
 
 1. **Verify Consistency**: Check that all artifacts are aligned with changes
 2. **Update Documentation**: Ensure all references are updated
-3. **Log Completely**: Document full change history in `audit.md`
+3. **Log Completely**: Document full change history in branch audit file (`aidlc-docs/audit/{branch}.md`)
 4. **Confirm with User**: Verify changes meet user's expectations
 5. **Resume Workflow**: Continue with normal execution from new state
 

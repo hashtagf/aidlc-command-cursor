@@ -209,7 +209,7 @@ If the analysis in step 9 reveals ANY ambiguous answers, you MUST:
 - Keep focus on story structure and format decisions
 
 ## Step 12: Log Approval Prompt
-- Before asking for approval, log the prompt with timestamp in `aidlc-docs/audit.md`
+- Before asking for approval, log the prompt with timestamp in branch audit file (`aidlc-docs/audit/{branch}.md`)
 - Include the complete approval prompt text
 - Use ISO 8601 timestamp format
 
@@ -219,7 +219,7 @@ If the analysis in step 9 reveals ANY ambiguous answers, you MUST:
 - If user requests changes, update the plan and repeat the approval process
 
 ## Step 14: Record Approval Response
-- Log the user's approval response with timestamp in `aidlc-docs/audit.md`
+- Log the user's approval response with timestamp in branch audit file (`aidlc-docs/audit/{branch}.md`)
 - Include the exact user response text
 - Mark the approval status clearly
 
@@ -249,7 +249,7 @@ If the analysis in step 9 reveals ANY ambiguous answers, you MUST:
 - [ ] Ensure all mandatory artifacts are generated
 
 ## Step 19: Log Approval Prompt
-- Before asking for approval, log the prompt with timestamp in `aidlc-docs/audit.md`
+- Before asking for approval, log the prompt with timestamp in branch audit file (`aidlc-docs/audit/{branch}.md`)
 - Include the complete approval prompt text
 - Use ISO 8601 timestamp format
 
@@ -292,7 +292,7 @@ If the analysis in step 9 reveals ANY ambiguous answers, you MUST:
 - If user requests changes, update stories and repeat the approval process
 
 ## Step 22: Record Approval Response
-- Log the user's approval response with timestamp in `aidlc-docs/audit.md`
+- Log the user's approval response with timestamp in branch audit file (`aidlc-docs/audit/{branch}.md`)
 - Include the exact user response text
 - Mark the approval status clearly
 

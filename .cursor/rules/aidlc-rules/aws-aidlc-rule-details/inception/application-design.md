@@ -105,7 +105,7 @@ If the analysis in step 8 reveals ANY ambiguous answers, you MUST:
   - Data flow diagrams
 
 ### 11. Log Approval
-- Log approval prompt with timestamp in `aidlc-docs/audit.md`
+- Log approval prompt with timestamp in branch audit file (`aidlc-docs/audit/{branch}.md`)
 - Include complete approval prompt text
 - Use ISO 8601 timestamp format
 
@@ -135,7 +135,7 @@ If the analysis in step 8 reveals ANY ambiguous answers, you MUST:
 - If user requests changes, update the design and repeat the approval process
 
 ### 14. Record Approval Response
-- Log the user's approval response with timestamp in `aidlc-docs/audit.md`
+- Log the user's approval response with timestamp in branch audit file (`aidlc-docs/audit/{branch}.md`)
 - Include the exact user response text
 - Mark the approval status clearly
 

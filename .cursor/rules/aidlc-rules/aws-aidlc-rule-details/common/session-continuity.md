@@ -39,7 +39,7 @@ B) Review a previous stage ([Show available stages])
    - **Code Stages**: Load ALL artifacts + existing code files
 5. **Adapt options** based on architectural choice and current phase
 6. **Show specific next steps** rather than generic descriptions
-7. **Log the continuity prompt** in audit.md with timestamp
+7. **Log the continuity prompt** in branch audit file (`aidlc-docs/audit/{branch}.md`) with timestamp
 8. **Context Summary**: After loading artifacts, provide brief summary of what was loaded for user awareness
 9. **Asking questions**: ALWAYS ask clarification or user feedback questions by placing them in .md files. DO NOT place the multiple-choice questions in-line in the chat session.
 

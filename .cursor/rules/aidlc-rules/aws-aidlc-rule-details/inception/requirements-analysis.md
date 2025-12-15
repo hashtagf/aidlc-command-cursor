@@ -71,7 +71,7 @@
 ### Step 4: Assess Current Requirements
 
 Analyze whatever the user has provided:
-   - Intent statements or descriptions (already logged in audit.md)
+   - Intent statements or descriptions (already logged in branch audit file)
    - Existing requirements documents (search workspace if mentioned)
    - Pasted content or file references
    - Convert any non-markdown documents to markdown format 
@@ -127,7 +127,7 @@ Update `aidlc-docs/aidlc-state.md`:
 ```
 
 ### Step 9: Log and Proceed
-   - Log approval prompt with timestamp in `aidlc-docs/audit.md`
+   - Log approval prompt with timestamp in branch audit file (`aidlc-docs/audit/{branch}.md`)
    - Present completion message in this structure:
      1. **Completion Announcement** (mandatory): Always start with this:
 

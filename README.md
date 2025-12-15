@@ -284,6 +284,7 @@ Project-level (`.cursor/commands/`) จะ override global (`~/.cursor/commands/
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.3 | 2025-12-15 | Updated all rules/commands for branch-based audit consistency |
 | 1.2 | 2025-12-15 | Added automatic CHANGELOG management for projects |
 | 1.1 | 2025-12-15 | Added team collaboration docs, improved installation guide |
 | 1.0 | 2025-12-15 | Initial release |

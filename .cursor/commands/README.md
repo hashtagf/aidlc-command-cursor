@@ -123,7 +123,9 @@ your-project/
 │   │   └── build-and-test/
 │   ├── operations/
 │   ├── aidlc-state.md     # Current state
-│   └── audit.md           # Audit trail
+│   └── audit/             # Branch-based audit logs
+│       ├── audit-index.md
+│       └── {branch}.md
 └── [your source code]
 ```
 

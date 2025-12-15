@@ -178,7 +178,7 @@ Generated outputs from executing plans.
 ### State Files
 Files tracking workflow progress and status.
 - `aidlc-state.md`: Overall workflow state
-- `audit.md`: Complete audit trail of all interactions
+- `audit/{branch}.md`: Branch-based audit trail of all interactions (see `common/audit-management.md`)
 
 ## Common Abbreviations
 

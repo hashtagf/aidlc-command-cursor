@@ -13,7 +13,7 @@ When you use this command, the AI will:
 
 2. **For New Projects**
    - Create `aidlc-docs/` folder structure
-   - Initialize `aidlc-state.md` and `audit.md`
+   - Initialize `aidlc-state.md` and branch audit file
    - Proceed to Requirements Analysis
 
 3. **For Resume**

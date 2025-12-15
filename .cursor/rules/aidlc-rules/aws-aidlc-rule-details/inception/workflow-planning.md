@@ -465,7 +465,7 @@ I recommend skipping [Y] stages:
 
 ## Step 11: Log Interaction
 
-Log in `aidlc-docs/audit.md`:
+Log in branch audit file (`aidlc-docs/audit/{branch}.md`):
 
 ```markdown
 ## Workflow Planning - Approval
